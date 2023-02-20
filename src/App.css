@@ -19,10 +19,51 @@
 }
 
 .header-logo {
-	height: 100px;
+	height: 60px;
 }
 
 .rtx-image {
 	display: block;
 	width: 100%;
+}
+
+.tatoo-post {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.post-bg {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(47, 45, 45, 0.471);
+}
+
+.post-content {
+	position: relative;
+	max-width: 34%;
+	background-color: black;
+	display: block;
+	margin: auto;
+}
+
+.post-content img {
+	display: block;
+	max-width: 100%;;
+	margin: auto;
+	margin-top: 100px;
+}
+
+.post-content h4 {
+	color: white;
+	padding-bottom: 20px;
 }
