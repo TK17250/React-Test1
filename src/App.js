@@ -13,25 +13,25 @@ function App() {
   }
 
   function CloseClick() {
-	setseleRTX(null)
+    setseleRTX(null)
   }
 
-	const rtxElem = RTXs.map((RTXs, index) => {
-		return <Item key={index} rtxx={RTXs} RTXClick={onRTXopen} />
-	} )
+  const rtxElem = RTXs.map((RTXs, index) => {
+    return <Item key={index} rtxx={RTXs} RTXClick={onRTXopen} />
+  })
 
   let rtxPost = null
   if (!!seleRTX) {
     rtxPost = <Post RTXs={seleRTX} onBgClick={CloseClick} />
   }
-  
+
   return (
     <div className="App">
       <AppHeader />
       <div className='app-grid'>
-		{rtxElem}
+        {rtxElem}
       </div>
-	  {rtxPost}
+      {rtxPost}
     </div>
   );
 }
