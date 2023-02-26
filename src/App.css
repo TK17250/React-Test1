@@ -2,6 +2,15 @@
   text-align: center;
 }
 
+.app-section {
+	padding: 30px;
+}
+
+.app-container {
+	max-width: 1000px;
+	margin: auto;
+}
+
 .app-header {
   border-bottom: 1px solid black;
   height: 50px;
@@ -15,7 +24,6 @@
 	grid-template-columns: 1fr 1fr;
 	column-gap: 16px;
 	row-gap: 16px;
-	padding: 30px;
 }
 
 .header-logo {
@@ -74,4 +82,18 @@
 	.app-grid {
 		grid-template-columns: 1fr;
 	}
+}
+
+/* 			search			 */
+
+.app-search {
+	margin-bottom: 15px;
+}
+
+.app-search-input {
+	width: 100%;
+	padding: 8px;
+	font-size: 16px;
+	border-radius: 10px;
+	border: 1px solid gray;
 }
